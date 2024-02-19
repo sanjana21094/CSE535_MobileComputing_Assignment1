@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgtwo">
+
+    <TextView
+        android:id="@+id/selectJourneyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Select your Journey from"
+        android:textColor="#00242a"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <ImageView
+        android:id="@+id/locationIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/circleicon"
+        app:layout_constraintTop_toBottomOf="@id/selectJourneyText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/currentLocationText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="your current location"
+        android:textSize="18sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintStart_toEndOf="@id/locationIcon"
+        app:layout_constraintTop_toTopOf="@id/locationIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="6dp" />
+
+    <ImageView
+        android:id="@+id/pinIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/pinicon"
+        app:layout_constraintTop_toBottomOf="@id/currentLocationText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/popularHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POPULAR"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pinIcon"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp" />
+
+    <ImageButton
+        android:id="@+id/popularButton"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/journey1"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@id/popularHeading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <ImageButton
+        android:id="@+id/placeholderButton"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/journey2"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@id/popularButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
