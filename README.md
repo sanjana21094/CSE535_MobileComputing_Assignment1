@@ -6,3 +6,4 @@
 5. The stop button tracks the stop the user is at now and the distance covered , distance left to cover to reach the final destination and the distance it has to cover to reach the next stop.
 6. The convert button is used to convert the units of the distance from kilometers to miles and vice versa whenever the user wishes to change the unit.
 7. The progress bar gives the user the idea of how much of the trip is left for them to reach the final destination giving an overall review of the trip.
+8. Jetpack Compose LazyColumns helped in efficiently displaying a scrollable list , dynamically loading the content.
